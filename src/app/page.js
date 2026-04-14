@@ -333,21 +333,9 @@ const JourneyStep = ({ step, index }) => {
             }`}
           data-speed="1.2"
         >
-          {/* Step index pill */}
-          {/* <div
-            className={`inline-flex items-center gap-2 mb-5 px-3 py-1 rounded-full border text-xs font-mono tracking-widest uppercase ${isAlt ? "ml-auto" : ""
-              }`}
-            style={{ borderColor: `${step.glow}40`, color: step.glow, display: "inline-flex" }}
-          >
-            <span
-              className="w-1.5 h-1.5 rounded-full animate-pulse"
-              style={{ background: step.glow }}
-            />
-            Step {String(index + 1).padStart(2, "0")}
-          </div> */}
 
           <h2
-            className={`step-title text-6xl md:text-7xl lg:text-8xl font-bangers ${c.text} mb-6 uppercase ${c.drop} group-hover:scale-105 ${c.hover} transition-transform duration-500 transform ${c.origin}`}
+            className={`step-title text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bangers ${c.text} mb-6 uppercase ${c.drop} group-hover:scale-105 ${c.hover} transition-transform duration-500 transform ${c.origin} break-words leading-none`}
           >
             {step.label}
           </h2>
