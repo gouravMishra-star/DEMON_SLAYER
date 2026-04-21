@@ -1,21 +1,4 @@
-import { Inter, Montserrat, Bangers } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
-
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
-  subsets: ["latin"],
-});
-
-const bangers = Bangers({
-  weight: "400",
-  variable: "--font-bangers",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Demon Slayer Web UI",
@@ -24,10 +7,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      className={`${inter.variable} ${montserrat.variable} ${bangers.variable} h-full antialiased`}
-    >
+    <html lang="en" className="h-full antialiased font-satoshi selection:bg-[#111] selection:text-[#f2f2f2]">
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
